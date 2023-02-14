@@ -1,0 +1,264 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: orange;
+    position: sticky;
+    top: 0;
+    margin-bottom: 30px;
+    padding: 10px;
+    z-index: 2;
+    
+}
+
+.list{
+    font-size: 4ch;
+    
+}
+.one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* text section */
+
+.text{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.text_text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.story{
+    background-color: #1b5e20;
+    padding: 10px 20px;
+    color: #ffff;
+    align-self: flex-start;
+}
+.text_text h1{
+    font-size: 8ch;
+    line-height: 1.2;
+    font-weight: 400;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+.click_btn{
+    background-color: #fdd835;
+    align-self:flex-start;
+}
+
+
+.three_logo{
+    margin-top: 100px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: 50px;
+    transition: 0.2s ease-in-out;
+}
+.home{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+.home img{
+    width: 70px;
+}
+/* .home:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px 5px rgba(1, 1, 1, 0.05);
+} */
+
+.gtrp{
+    border: 1px sold #ccc;
+    margin: 20px 0;
+}
+
+.food{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.food .tag{
+    align-self: center;
+}
+
+.picture{
+        display: grid;
+        gap: 20px;
+        grid-template-areas: 
+        "a1 a1 a2 a3"
+        "a1 a1 a2 a7"
+        "a4 a5 a6 a7";
+
+}
+
+.test1{
+    grid-area: a1;
+}
+.test2{
+    grid-area: a2;
+}
+.test3{
+    grid-area: a3;
+}
+.test3{
+    grid-area: a4;
+}
+.test4{
+    grid-area: a5;
+}
+.test5{
+    grid-area: a6;
+}
+.test6{
+    grid-area: a7;
+}
+
+.image_last{
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+.image_last:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+
+}
+.food1{
+    background-color: #1b5e20;
+    padding: 10px 20px;
+    color: #ffff;
+}
+
+
+footer{
+    background-color:#fdd835;
+    
+}
+.footer_text{
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.point h3{
+    color: brown;
+}
+
+::placeholder{
+    padding: 10px 15px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+.point ul{
+    list-style: none;
+    margin-top: 5px;
+}
+.point{
+    margin-top: 10px;
+}
+.point li{
+    margin-top: 5px;
+}
+
+.point input{
+    margin-top: 7px;
+}
+.point h3{
+    margin-top: 5px;
+}
+.point img{
+    margin-top: 10px;
+    padding: 1px;
+}
+
+
+
+
+
+
+@media (max-width:786px){
+    .text{
+        flex-direction: column;
+    }
+
+    .text_image{
+        display: flex;
+        justify-content: center;
+    }
+    .text_image img{
+        width: 90%;
+    }
+    .text_text{
+        gap: 10px;
+        padding: 10px;
+    }
+    .text_text h1{
+        font-size: 32px;
+    }
+    .three_logo{
+        flex-direction: column;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .picture{
+        padding: 10px;
+    }
+    .picture-image{
+        border-radius: 0px;
+    }
+    .footer_text{
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width:450px){
+    body,html{
+        overflow-x: hidden;
+    }
+    
+    nav{
+        height: 80px;
+        width: 100%;
+        background: orange;
+        position: fixed;
+        top: 0;
+        margin-bottom: 30px;
+        padding: 10px;
+        z-index: 2;
+        
+    }
+    .text_image img{
+        position: relative;
+        top: 110px;
+    }
+
+
+}
